@@ -9,6 +9,7 @@
  * @license    MIT License
  */
 
+use Geocoder\Dumper\GeoArray;
 use Geocoder\Dumper\GeoJson;
 use Geocoder\Dumper\Gpx;
 use Geocoder\Dumper\Kml;
@@ -63,6 +64,7 @@ class ProviderAndDumperAggregator
     {
         $dumperClasses = collect([
             'geojson' => GeoJson::class,
+            'geoarray' => GeoArray::class,
             'gpx' => Gpx::class,
             'kml' => Kml::class,
             'wkb' => Wkb::class,
